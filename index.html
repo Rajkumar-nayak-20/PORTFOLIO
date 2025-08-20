@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rajkumar Nayak | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="orbs" aria-hidden="true">
+    <div class="orb purple"></div>
+    <div class="orb aqua"></div>
+  </div>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">Rajkumar <span>Nayak</span></div>
+
+      <div class="menu-toggle" id="menuToggle">☰</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="btn-nav" href="RAJ_CV.pdf" download>Download Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content" id="hero3d">
+      <h2 class="mono">Hi, I'm <span style="color:var(--brand-2)">Rajkumar</span> <span style="color:var(--brand)">Nayak</span></h2>
+      <p>A passionate Web Developer & MCA Student building delightful, performant experiences.</p>
+      <div class="cta">
+        <a class="btn" href="#projects">See My Work</a>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="section-card about-wrap">
+      <div class="avatar" data-tilt>
+        <img src="rajpro.jpeg" alt="Rajkumar Nayak" />
+      </div>
+      <div class="about-text">
+        <p>I am an MCA student with a strong interest in <b>web development and software development</b>, problem-solving, and software design. I enjoy making interactive and user-friendly websites and always try to learn new technologies to improve my knowledge. My goal is to become a skilled software developer and create useful applications that make life easier for people.</p>
+        <p class="mono">Focus: JavaScript · React · Java · MySQL · UI/UX micro-interactions</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="skills">
+    <h2 class="center">Skills</h2>
+    <div class="section-card">
+      <div class="skill-grid">
+        <div class="chip" data-tilt>JavaScript<span class="sub">ES6+ · DOM · Fetch</span></div>
+        <div class="chip" data-tilt>React.js<span class="sub">Hooks · Router</span></div>
+        <div class="chip" data-tilt>Java<span class="sub">Core · OOP</span></div>
+        <div class="chip" data-tilt>MySQL<span class="sub">Schema · Queries</span></div>
+        <div class="chip" data-tilt>HTML<span class="sub">Semantic · A11y</span></div>
+        <div class="chip" data-tilt>CSS<span class="sub">Flex · Grid · Anim</span></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <h2 class="center">Projects</h2>
+    <div class="projects-grid">
+      <article class="card" data-tilt>
+        <div class="thumb">
+          <img src="food.png" alt="Online Food Ordering System">
+        </div>
+        <div class="card-body">
+          <h3>Online Food Ordering System</h3>
+          <p>A Java web-based project for seamless food ordering with payment integration.</p>
+        </div>
+      </article>
+
+      <article class="card" data-tilt>
+        <div class="thumb">
+          <img src="tour.png" alt="Wanderlust Travel Website">
+        </div>
+        <div class="card-body">
+          <h3>Wanderlust Travel Website</h3>
+          <p>A modern travel booking platform built with React & Node.js hosted on Render.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+ 
+  <section id="contact">
+    <h2 class="center">Contact Me</h2>
+    <div class="section-card">
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <small>© <span id="y"></span> Crafted by <b>Rajkumar Nayak</b> · Powered by passion 🚀</small>
+  </footer>
+  <script src="script.js"></script>
+
+ 
+</body>
+</html>
